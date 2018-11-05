@@ -1,0 +1,6 @@
+.select{
+  width: 150px;
+  border: 1px solid black;
+  line-height: 30px;
+  padding: 0 10px;
+}

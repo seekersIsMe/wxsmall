@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/me/me"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff0",
+    "navigationBarTitleText": "阳光招生",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#00f",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "image/e2.png",
+        "selectedIconPath": "image/e2_.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "申请",
+        "iconPath": "image/e3.png",
+        "selectedIconPath": "image/e3_.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "image/e6.png",
+        "selectedIconPath": "image/e6_.png"
+      }
+    ]
+  }
+}

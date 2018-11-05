@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+首页
+ <input type='text' value='{{array[index]}}'  bindinput="bindKeyInput" class='select' />
+
+ <Select prop-array='{{selectArray}}'></Select>
+</view>
