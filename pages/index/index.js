@@ -62,9 +62,6 @@ Page({
     //事件处理函数
     bindViewTap: function () {
     },
-    onPullDownRefresh() {
-        console.log('下拉刷新');
-    },
     onLoad: function () {
     }
 })

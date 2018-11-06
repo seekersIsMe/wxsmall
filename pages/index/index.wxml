@@ -22,7 +22,7 @@
     <view class="queryList">
         <view class="title">通过审核</view>
         <view class="list">
-            <view wx:for="{{list}}" clas="item">
+            <view wx:for="{{list}}" wx:key="{{index}}"  class="item">
                 <text class="text">{{item.schoolName}}</text>
                 <text class="text">{{item.principal}}</text>
                 <text class="text">{{item.telNum}}</text>

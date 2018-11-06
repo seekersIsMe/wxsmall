@@ -37,11 +37,15 @@
 }
 .queryList .list .item {
   display: flex;
+    border-bottom: 1px solid #ccc;
 }
 .queryList .list .text{
+    /*flex:1;*/
     margin-right: 20rpx;
     /*background-color: red;*/
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-size:32rpx;
+    line-height: 60rpx;
 }
