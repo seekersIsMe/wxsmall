@@ -1,7 +1,33 @@
 <!--index.wxml-->
 <view class="container">
-首页
- <input type='text' value='{{array[index]}}'  bindinput="bindKeyInput" class='select' />
-
- <Select prop-array='{{selectArray}}'></Select>
+    <view class='wrapper-select'>
+        <view class='item'>
+            <text class='label'>
+                地方：
+            </text>
+            <view class="select">
+                <Select prop-array='{{address}}'></Select>
+            </view>
+        </view>
+        <view class='item'>
+            <text class='label'>
+                学校：
+            </text>
+            <view class="select">
+                <Select prop-array='{{school}}'></Select>
+            </view>
+        </view>
+        <button class="btnQuery" type="primary" size="mini">查询</button>
+    </view>
+    <view class="queryList">
+        <view class="title">通过审核</view>
+        <view class="list">
+            <view wx:for="{{list}}" clas="item">
+                <text class="text">{{item.schoolName}}</text>
+                <text class="text">{{item.principal}}</text>
+                <text class="text">{{item.telNum}}</text>
+                <text class="text">{{item.date}}</text>
+            </view>
+        </view>
+    </view>
 </view>

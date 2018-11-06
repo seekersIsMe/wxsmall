@@ -1,12 +1,12 @@
 .com-selectBox{
-    width: 200px;
+    width: 100%;
 }
 .com-sContent{
     border: 1px solid #e2e2e2;
     background: white;
     font-size: 16px;
     position: relative;
-    height: 30px;
+    height: 100%;
     line-height: 30px;
 }
 .com-sImg{

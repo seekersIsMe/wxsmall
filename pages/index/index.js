@@ -3,33 +3,68 @@
 const app = getApp()
 
 Page({
-  data: {
-    array:[
-      '广州市',
-      '惠州',
-      '东莞',
-    ],
-    index:1,
-    selectArray: [{
-      "id": "10",
-      "text": "会计类"
-    }, {
-      "id": "21",
-      "text": "工程类"
-    }]
-  },
-  //事件处理函数
-  bindViewTap: function() {
-  },
-  onPullDownRefresh (){
-    console.log('下拉刷新')
-  },
-  onLoad: function () {
-  
-  },
-  bindPickerChange:function (e) {
-    this.setData({
-      index:e.detail.value
-    })
-  }
+    data: {
+        address: [
+            {
+                "id": "1",
+                "text": "广州市"
+            },
+            {
+                "id": "2",
+                "text": "惠州"
+            },
+            {
+                "id": "3",
+                "text": "东莞"
+            }
+        ],
+        school: [
+            {
+                "id": "1",
+                "text": "惠东学校1"
+            },
+            {
+                "id": "2",
+                "text": "惠东学校2"
+            },
+            {
+                "id": "3",
+                "text": "惠东学校3"
+            }
+        ],
+        list:[
+            {
+                schoolName: '惠东学校1',
+                principal: '张三',
+                telNum: 13682427923,
+                date: '2018-10-6'
+            },
+            {
+                schoolName: '惠东学校2',
+                principal: '李四',
+                telNum: 13682427923,
+                date: '2018-10-6'
+            },
+            {
+                schoolName: '惠东学校3',
+                principal: '王五',
+                telNum: 13682427923,
+                date: '2018-10-6'
+            },
+            {
+                schoolName: '惠东学校4',
+                principal: '小红',
+                telNum: 13682427923,
+                date: '2018-10-6'
+            }
+        ]
+    },
+    //事件处理函数
+    bindViewTap: function () {
+    },
+    onPullDownRefresh() {
+        console.log('下拉刷新');
+    },
+    onLoad: function () {
+    }
 })
